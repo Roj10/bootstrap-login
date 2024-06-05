@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Bootstrap SAEP</title>
+</head>
+<body>
+    <!-- titulo -->
+    <div class="page-header">
+        <h2 class="title">
+            Bem vindo ao sistema Bibliotecário!
+        </h2>
+    </div>
+    <!-- formulário login -->
+    <div class="col text-center">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Matricula</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+              <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar sua matricula, com ninguém.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+            </div>
+            <div class="form-group form-check">
+              <input type="radio" name="radio" class="form-check-input" id="estudante">
+              <label class="form-check-label" for="exampleCheck1">estudante</label>  
+              <br>
+              <input type="radio" name="radio" class="form-check-input" id="biblio">
+              <label class="form-check-label" for="exampleCheck2">bibliotecaria</label>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="redirecionar()">Enviar</button>
+          </form>
+    </div>
+</body>
+</html>
